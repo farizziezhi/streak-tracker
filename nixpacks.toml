@@ -8,4 +8,4 @@ cmds = ['npm ci']
 cmds = ['npm run build || echo "No build step"']
 
 [start]
-cmd = 'npm start'
+cmd = 'node ace serve --host=0.0.0.0'
