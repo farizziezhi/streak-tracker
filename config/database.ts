@@ -12,6 +12,7 @@ const dbConfig = defineConfig({
         user: env.get('MYSQLUSER') || env.get('DB_USER'),
         password: env.get('MYSQLPASSWORD') || env.get('DB_PASSWORD'),
         database: env.get('MYSQLDATABASE') || env.get('DB_DATABASE'),
+        ssl: env.get('NODE_ENV') === 'production' ? { rejectUnauthorized: false } : false,
       },
       migrations: {
         naturalSort: true,
