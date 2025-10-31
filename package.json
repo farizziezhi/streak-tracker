@@ -9,7 +9,7 @@
     "build": "node ace build",
     "dev": "node ace serve --hmr",
     "prod": "node ace serve --env=production",
-    "migrate:prod": "node ace migration:run --env=production",
+    "migrate:prod": "node ace migration:run --force",
     "test": "node ace test",
     "lint": "eslint .",
     "format": "prettier --write .",
